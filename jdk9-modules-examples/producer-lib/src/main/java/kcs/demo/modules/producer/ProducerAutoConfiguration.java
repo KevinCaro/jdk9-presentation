@@ -1,7 +1,7 @@
-package kcs.pres.modules.producer;
+package kcs.demo.modules.producer;
 
-import kcs.pres.modules.producer.api.Producer;
-import kcs.pres.modules.producer.impl.ProducerImpl;
+import kcs.demo.modules.producer.api.Producer;
+import kcs.demo.modules.producer.impl.ProducerImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

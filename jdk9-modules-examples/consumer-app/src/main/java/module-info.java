@@ -1,4 +1,4 @@
-module kcs.pres.modules.consumerservice {
+module kcs.demo.modules.consumerservice {
     requires spring.boot.autoconfigure;
     requires spring.boot;
     requires com.fasterxml.jackson.core;
@@ -14,6 +14,6 @@ module kcs.pres.modules.consumerservice {
 
     requires kcs.pres.modules.producerlibrary;
 
-    exports kcs.pres.modules.consumer;
-    opens kcs.pres.modules.consumer;
+    exports kcs.demo.modules.consumer;
+    opens kcs.demo.modules.consumer;
 }

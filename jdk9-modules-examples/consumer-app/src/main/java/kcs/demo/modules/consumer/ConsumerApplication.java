@@ -1,4 +1,4 @@
-package kcs.pres.modules.consumer;
+package kcs.demo.modules.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

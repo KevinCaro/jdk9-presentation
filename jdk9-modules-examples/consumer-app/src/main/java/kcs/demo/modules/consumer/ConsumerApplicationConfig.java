@@ -1,6 +1,6 @@
-package kcs.pres.modules.consumer;
+package kcs.demo.modules.consumer;
 
-import kcs.pres.modules.producer.api.Producer;
+import kcs.demo.modules.producer.api.Producer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.HandlerMapping;

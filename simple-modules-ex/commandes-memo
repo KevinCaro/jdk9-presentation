@@ -1,0 +1,4 @@
+javac -d build --module-source-path src src/*/module-info.java src/**/*.java
+java --module-path build --module ConsumerApp/kcs.consumer.ConsumerApp
+TODO ranger en ordre chronologique
+java -p myjar.jar:producerlib.jar -m ConsumerApp/kcs.consumer.ConsumerApp

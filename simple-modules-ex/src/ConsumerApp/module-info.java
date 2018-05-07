@@ -1,0 +1,3 @@
+module ConsumerApp {
+    requires ProducerLib;
+}

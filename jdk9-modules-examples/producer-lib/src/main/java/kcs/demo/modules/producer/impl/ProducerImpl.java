@@ -1,9 +1,7 @@
-package kcs.pres.modules.producer.impl;
+package kcs.demo.modules.producer.impl;
 
-import kcs.pres.modules.producer.api.Producer;
+import kcs.demo.modules.producer.api.Producer;
 import org.springframework.stereotype.Service;
-
-import java.util.Random;
 
 @Service
 public class ProducerImpl implements Producer {

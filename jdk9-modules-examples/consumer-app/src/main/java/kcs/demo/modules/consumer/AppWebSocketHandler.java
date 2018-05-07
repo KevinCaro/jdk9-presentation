@@ -1,4 +1,4 @@
-package kcs.pres.modules.consumer;
+package kcs.demo.modules.consumer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

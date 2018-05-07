@@ -1,4 +1,4 @@
-package kcs.pres.modules.consumer;
+package kcs.demo.modules.consumer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
