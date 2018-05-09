@@ -1,3 +1,3 @@
-module kcs.myapp {
+module bleg.prog {
     requires la.best.lib;
 }

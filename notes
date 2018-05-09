@@ -1,0 +1,20 @@
+=== commandes ===
+
+exemple des modules (TODO ranger en ordre chronologique)
+	javac -d build --module-source-path src src/*/module-info.java src/**/*.java
+	java --module-path build --module ConsumerApp/kcs.consumer.ConsumerApp
+	java -p myjar.jar:producerlib.jar -m ConsumerApp/kcs.consumer.ConsumerApp
+
+=== questions ===
+
+modules
+	pourquoi javac verifie si dependences sont presentes à la compilation?
+	ce n'est pas la job de maven?
+
+=== autre ===
+
+modules
+	- attention : les sous packages doivent etres declare aussi dans
+	  module-info.java
+	- conflit de packages entre modules
+	- faire exemple class path vs module path (au runtime)
