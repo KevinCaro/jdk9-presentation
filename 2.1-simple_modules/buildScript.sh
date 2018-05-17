@@ -3,8 +3,10 @@
 
 rm -rf ./build
 
-javac -d build/moins.best.lib `find moins.best.lib -type f -name '*.java'`
-javac -d build/la.best.lib -p build `find la.best.lib -type f -name '*.java'`
-javac -d build/kcs.my.app -p build `find kcs.my.app -type f -name '*.java'`
+javac -d build/third.party.lib `find third.party.lib -type f -name '*.java'`
+javac -d build/kcs.my.lib -p build `find kcs.my.lib -type f -name '*.java'`
+javac -d build/kcs.app -p build `find kcs.app -type f -name '*.java'`
 echo Running MyApp
-java -p build -m bleg.prog/my.app.MyApp
+java -p build -m kcs.app/my.app.MyApp
+
+
