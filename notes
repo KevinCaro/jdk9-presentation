@@ -1,6 +1,7 @@
-=== commandes ===
+******TODO aller chercher ce quil y a comme notes dans google pres
 
 2.1 - Intro modules simple
+- dessiner diagrame de composantes
 - regarder le buildscript, expliquer module path, unnamed modules, automatic
   modules
 => dessiner / ecrire particularités entre module path / class path mix
@@ -16,7 +17,10 @@ bout de code random words
             return wordList.get(new Random().nextInt(wordList.size()));
         }).build(10));
 
-- demo modules spring boot
+2.2 - demo modules spring boot
+    - TODO noms
+    - expliquer automatic modules
+    - pour creer custom runtime
     rm -rf myjvm && jlink --module-path /usr/lib/jvm/default-runtime/jmods --add-modules java.base,java.logging,java.sql,java.desktop,java.management,java.naming --output myjvm && myjvm/bin/java -jar target/consumer-app-0.0.1-SNAPSHOT.jar
 
 
