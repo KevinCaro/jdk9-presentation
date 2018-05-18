@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# TODO trouver bon noms
 
 rm -rf ./build
 
