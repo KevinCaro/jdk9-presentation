@@ -1,4 +1,4 @@
 module third.party.lib {
-    exports moins.best.lib.api;
-    exports moins.best.lib;
+    exports com.bleh.word.generator.api;
+    exports com.bleh.word.generator;
 }

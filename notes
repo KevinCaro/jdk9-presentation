@@ -1,9 +1,15 @@
 === commandes ===
 
+2.1
 - exemple des modules (TODO ranger en ordre chronologique)
 	javac -d build --module-source-path src src/*/module-info.java src/**/*.java
 	java --module-path build --module ConsumerApp/kcs.consumer.ConsumerApp
 	java -p myjar.jar:producerlib.jar -m ConsumerApp/kcs.consumer.ConsumerApp
+bout de code random words
+        System.out.println(new WordListBuilder(() -> {
+            List<String> wordList = List.of("manana", "lala", "meeeeh");
+            return wordList.get(new Random().nextInt(wordList.size()));
+        }).build(10));
 
 - demo modules spring boot
     rm -rf myjvm && jlink --module-path /usr/lib/jvm/default-runtime/jmods --add-modules java.base,java.logging,java.sql,java.desktop,java.management,java.naming --output myjvm && myjvm/bin/java -jar target/consumer-app-0.0.1-SNAPSHOT.jar
