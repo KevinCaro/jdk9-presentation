@@ -1,12 +1,14 @@
-******TODO aller chercher ce quil y a comme notes dans google pres
+====== TODO ======
+- ** penser aux quotes
+- Construire un jre seulement avec java.base
+- voir notes diapo 10
 
+1 - Nouveau cycle de développement
 2.1 - Intro modules simple
 - dessiner diagrame de composantes
 - regarder le buildscript, expliquer module path, unnamed modules, automatic
   modules
 => dessiner / ecrire particularités entre module path / class path mix
-
-
 - exemple des modules (TODO ranger en ordre chronologique)
 	javac -d build --module-source-path src src/*/module-info.java src/**/*.java
 	java --module-path build --module ConsumerApp/kcs.consumer.ConsumerApp
@@ -30,6 +32,7 @@ modules
 	- pourquoi javac verifie si dependences sont presentes à la compilation?
 	ce n'est pas la job de maven?
 	- oblige d'utiliser les modules?
+	- JPMS JDK : améliore performance?
 
 === autre ===
 
@@ -38,3 +41,33 @@ modules
 	  module-info.java
 	- conflit de packages entre modules
 	- faire exemple class path vs module path (au runtime)
+
+
+=== liens utiles ===
+Lien GIT de la présentation
+    https://github.com/KevinCaro/jdk9-presentation
+Pour creer et compiler des modules manuellement avec les commandes java et javac
+    https://www.logicbig.com/tutorials/core-java-tutorial/modules/modes.html
+Blog sur jlink et zero dependency java apps
+    https://steveperkins.com/using-java-9-modularization-to-ship-zero-dependency-native-apps/
+Java 9’s new garbage collector: What’s changing? What’s staying?
+    https://jaxenter.com/java-9s-new-garbage-collector-whats-changing-whats-staying-118313.html
+Java 9 is here: Everything you need to know (high level article sur les
+  nouveautées de java 9
+    https://www.infoworld.com/article/3227244/java/java-9-is-here-everything-you-need-to-know.html
+Exploring Java 9: The Key Parts by Venkat Subramaniam (présentation sur Java
+  9 à une conf Devoxx par Venkat!)
+    https://www.youtube.com/watch?v=Yacu1yUktjY
+Streams improvements
+    https://dzone.com/articles/java-9-streams-and-process-api 
+Reactive streams 
+    https://dzone.com/articles/reactive-streams-in-java-9 , http://www.reactive-streams.org/
+Modules cheat sheet 
+    http://files.zeroturnaround.com/pdf/RebelLabs-Java-9-modules-cheat-sheet.pdf (https://zeroturnaround.com/rebellabs/java-9-modules-cheat-sheet/)
+
+=== liens officiels ===
+Nouveautés java 9
+    https://docs.oracle.com/javase/9/whatsnew/toc.htm
+
+=== JEPs ===
+- Concurrency updates : http://openjdk.java.net/jeps/266
