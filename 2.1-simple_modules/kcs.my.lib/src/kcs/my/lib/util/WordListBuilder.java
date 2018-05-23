@@ -18,7 +18,7 @@ public class WordListBuilder {
         this.wordGenerator = customWordGenerator;
     }
 
-    public String build(int numberOfItems) {
+    public String buildListToString(int numberOfItems) {
         return IntStream.rangeClosed(1, numberOfItems)
             .mapToObj(i -> i + ": " + wordGenerator.generateWord())
             .collect(Collectors.joining("\n"));

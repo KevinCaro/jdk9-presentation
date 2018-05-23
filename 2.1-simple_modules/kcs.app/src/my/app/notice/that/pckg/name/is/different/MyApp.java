@@ -5,7 +5,7 @@ import kcs.my.lib.util.WordListBuilder;
 public class MyApp {
 
     public static void main(String[] args) {
-        System.out.println(new WordListBuilder().build(5));
+        System.out.println(new WordListBuilder().buildListToString(5));
     }
 
 }

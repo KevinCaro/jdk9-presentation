@@ -1,7 +1,6 @@
 ====== TODO ======
 - ** penser aux quotes
-- Construire un jre seulement avec java.base
-- voir notes diapo 10
+- utiliser jdeps qqpart
 
 1 - Nouveau cycle de développement
 2.1 - Intro modules simple
@@ -64,6 +63,8 @@ Reactive streams
     https://dzone.com/articles/reactive-streams-in-java-9 , http://www.reactive-streams.org/
 Modules cheat sheet 
     http://files.zeroturnaround.com/pdf/RebelLabs-Java-9-modules-cheat-sheet.pdf (https://zeroturnaround.com/rebellabs/java-9-modules-cheat-sheet/)
+Nouveau formats d'archives
+    https://www.developer.com/java/data/how-modules-are-packaged-in-java-9.html
 
 === liens officiels ===
 Nouveautés java 9
