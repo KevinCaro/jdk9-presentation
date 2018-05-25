@@ -1,4 +1,4 @@
-package kcs.demo.modules.producer.api;
+package kcs.demo.resource.producer.api;
 
 public interface Producer {
 

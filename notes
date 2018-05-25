@@ -1,8 +1,11 @@
 ====== TODO ======
 - ** penser aux quotes
 - utiliser jdeps qqpart
+- THE UNNAMED MODULE
+- prouver amelioration de perf avec JPMS / module resolution
 
 1 - Nouveau cycle de développement
+
 2.1 - Intro modules simple
 - dessiner diagrame de composantes
 - regarder le buildscript, expliquer module path, unnamed modules, automatic
@@ -19,19 +22,13 @@ bout de code random words
         }).build(10));
 
 2.2 - demo modules spring boot
-    - TODO noms
-    - expliquer automatic modules
-    - pour creer custom runtime
+- TODO noms
+- expliquer automatic modules
+- pour creer custom runtime
     rm -rf myjvm && jlink --module-path /usr/lib/jvm/default-runtime/jmods --add-modules java.base,java.logging,java.sql,java.desktop,java.management,java.naming --output myjvm && myjvm/bin/java -jar target/consumer-app-0.0.1-SNAPSHOT.jar
 
 
 === questions ===
-
-modules
-	- pourquoi javac verifie si dependences sont presentes à la compilation?
-	ce n'est pas la job de maven?
-	- oblige d'utiliser les modules?
-	- JPMS JDK : améliore performance?
 
 === autre ===
 

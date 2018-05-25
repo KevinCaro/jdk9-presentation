@@ -1,6 +1,6 @@
-package kcs.demo.modules.consumer;
+package kcs.demo.service;
 
-import kcs.demo.modules.producer.api.Producer;
+import kcs.demo.resource.producer.api.Producer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
@@ -13,16 +13,16 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
 @Configuration
-public class ConsumerApplicationConfig {
+public class AppConfig {
 
     @Bean
-    public RouterFunction<ServerResponse> producerStreamRoute(ChoseHandler handler) {
-        return route(GET("/aara"), handler::handle);
+    public RouterFunction<ServerResponse> producerStreamRoute(ServiceHandler handler) {
+        return route(GET("/my-acronyms"), handler::handle);
     }
 
     @Bean
     public Flux<String> producerFlux(Producer producer) {
-        return Flux.interval(Duration.ofSeconds(1))
+        return Flux.interval(Duration.ofSeconds(3))
             .map(aLong -> producer.produce())
             .replay(0)
             .autoConnect()
