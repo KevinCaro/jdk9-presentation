@@ -1,4 +1,4 @@
-package com.bleh.word.generator;
+package com.bleh.word.generator.impl;
 
 import java.util.List;
 import java.util.Random;

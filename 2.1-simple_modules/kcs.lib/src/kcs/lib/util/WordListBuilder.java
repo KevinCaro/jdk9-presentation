@@ -1,6 +1,6 @@
-package kcs.my.lib.util;
+package kcs.lib.util;
 
-import com.bleh.word.generator.EnglishAnimalsWordGenerator;
+import com.bleh.word.generator.impl.EnglishAnimalsWordGenerator;
 import com.bleh.word.generator.api.WordGenerator;
 
 import java.util.stream.Collectors;

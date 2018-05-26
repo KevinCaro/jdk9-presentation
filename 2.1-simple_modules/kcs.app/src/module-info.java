@@ -1,3 +1,3 @@
 module kcs.app {
-    requires kcs.my.lib;
+    requires kcs.lib;
 }

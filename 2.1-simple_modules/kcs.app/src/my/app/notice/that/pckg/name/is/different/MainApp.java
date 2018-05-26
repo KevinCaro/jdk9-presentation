@@ -1,6 +1,6 @@
 package my.app.notice.that.pckg.name.is.different;
 
-import kcs.my.lib.util.WordListBuilder;
+import kcs.lib.util.WordListBuilder;
 
 public class MainApp {
 
