@@ -1,15 +1,8 @@
 ====== TODO ======
-- ** penser aux quotes
-- utiliser jdeps qqpart
-- THE UNNAMED MODULE
-- prouver amelioration de perf avec JPMS / module resolution
-
 1 - Nouveau cycle de développement
 
 2.1 - Intro modules simple
 - dessiner diagrame de composantes
-- regarder le buildscript, expliquer module path, unnamed modules, automatic
-  modules
 => dessiner / ecrire particularités entre module path / class path mix
 - exemple des modules (TODO ranger en ordre chronologique)
 	javac -d build --module-source-path src src/*/module-info.java src/**/*.java
@@ -22,21 +15,8 @@ bout de code random words
         }).build(10));
 
 2.2 - demo modules spring boot
-- TODO noms
-- expliquer automatic modules
 - pour creer custom runtime
     rm -rf myjvm && jlink --module-path /usr/lib/jvm/default-runtime/jmods --add-modules java.base,java.logging,java.sql,java.desktop,java.management,java.naming --output myjvm && myjvm/bin/java -jar target/consumer-app-0.0.1-SNAPSHOT.jar
-
-
-=== questions ===
-
-=== autre ===
-
-modules
-	- attention : les sous packages doivent etres declare aussi dans
-	  module-info.java
-	- conflit de packages entre modules
-	- faire exemple class path vs module path (au runtime)
 
 
 === liens utiles ===

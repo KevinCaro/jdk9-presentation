@@ -1,6 +1,7 @@
 package my.app.notice.that.pckg.name.is.different;
 
 import kcs.lib.WordListBuilder;
+
 public class MainApp {
 
     public static void main(String[] args) {
