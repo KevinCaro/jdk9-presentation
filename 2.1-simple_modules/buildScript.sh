@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -e
 rm -rf ./build
 
 javac -d build/third.party.lib `find third.party.lib -type f -name '*.java'`

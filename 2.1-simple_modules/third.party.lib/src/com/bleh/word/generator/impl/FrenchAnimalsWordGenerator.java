@@ -5,9 +5,9 @@ import java.util.Random;
 
 import com.bleh.word.generator.api.WordGenerator;
 
-public class EnglishAnimalsWordGenerator implements WordGenerator {
+public class FrenchAnimalsWordGenerator implements WordGenerator {
 
-    private List<String> wordList = List.of("dog", "cat", "bird", "wonderpus octopus");
+    private List<String> wordList = List.of("chien", "chat", "oiseau", "pieuvre photogénique");
 
     public String generateWord() {
         return wordList.get(new Random().nextInt(wordList.size()));

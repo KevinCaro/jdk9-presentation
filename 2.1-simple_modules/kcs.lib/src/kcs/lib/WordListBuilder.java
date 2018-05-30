@@ -1,4 +1,4 @@
-package kcs.lib.util;
+package kcs.lib;
 
 import com.bleh.word.generator.impl.EnglishAnimalsWordGenerator;
 import com.bleh.word.generator.api.WordGenerator;
