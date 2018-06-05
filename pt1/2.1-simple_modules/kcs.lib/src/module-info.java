@@ -1,5 +1,5 @@
 module kcs.lib {
-    requires third.party.lib;
+    requires transitive third.party.lib;
 
     exports kcs.lib;
 }
