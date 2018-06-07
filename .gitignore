@@ -29,3 +29,5 @@ target
 autre
 myjvm
 jars
+*jre*
+kcsapp-bundle
