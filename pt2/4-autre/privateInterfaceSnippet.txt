@@ -1,0 +1,14 @@
+interface MyInterface {
+    public static void pubStaticMethod(){
+	System.out.println(privStaticMethod());
+    }
+    private static String privStaticMethod() {
+	return "privStaticMethod";
+    }
+    default public void pubMethod(){
+	System.out.println(privMethod());
+    }
+    private String privMethod() {
+	return "privMethod";
+    }
+}

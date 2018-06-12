@@ -25,4 +25,9 @@ hs_err_pid*
 *.iml
 target
 .mvn
+
 autre
+myjvm
+jars
+*jre*
+kcsapp-bundle

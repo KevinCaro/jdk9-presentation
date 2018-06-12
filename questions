@@ -1,3 +1,0 @@
-== modules ==
-pourquoi javac verifie si dependences sont presentes à la compilation? ce n'est
-pas la job de maven?

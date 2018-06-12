@@ -1,1 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=kcs.demo.modules.producer.ProducerAutoConfiguration
